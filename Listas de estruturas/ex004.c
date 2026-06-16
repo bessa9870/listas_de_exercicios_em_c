@@ -43,3 +43,4 @@ void quadrado(Ponto v1,Ponto v2,Ponto v3){
     while(getchar() != '\n');
     return;
 }
+
