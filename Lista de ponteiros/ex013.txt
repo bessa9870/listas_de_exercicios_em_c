@@ -1,0 +1,68 @@
+Questão 13. Considerando as variáveis e ponteiros 
+definidos abaixo, quais são as atribuições 
+permitidas?
+int x, *ptx, **pp;
+float a, *pta, **pf;
+
+a) x = 100; //
+b) *pta = &a; xx
+c) ptx = &a; xx
+d) *pf = &a; //
+e) pp = &pta; xx
+f) **pf = 7.9; //
+g) *ptx = 20;
+h) ptx = &x;
+i) pp = &x;
+j) pf = &pta;
+
+R= a) x = 100;
+atribuição correta de int para int.
+d) *pf = &a;
+*pf seria a primeira desreferencia, sendo ela o 
+endereço que estava apontado pelo endereço em pf. 
+Essa declaração: *pf = &a é válida, mas apenas quando pf
+é inicializada com o endereço de um ponteiro simples antes.
+f) **pf = 7.9;
+**pf seria a segunda desreferencia, se a primeira seria o
+endereço do apontado pelo endereço dentro de pf, a segunda
+seria o valor dentro desse endereço, logo, essa operação é
+válida.
+g) *ptx = 20;
+válida, altera valor de x pelo ponteiro.
+h) ptx = &x;
+válida, ptx recebe o endereço de x.
+i) pp = &x;
+inválida, indireção recebe endereço de variável comum.
+j) pf = &pta;
+válida, indireção múltipla recebe endereço de ponteiro.
+
+obs: Código que eu montei para resolver a questão
+#include <stdio.h>
+
+int main(){
+    float a = 7.9;
+    float *pta = &a; // pta aponta para a
+    float **pf = &pta; // pf aponta para pta
+    float **pf2;
+
+    printf("Contedo de a:                   %.1f\n",a);
+    printf("Endereço de a(&a):              %p\n",&a);
+    printf("Conteúdo de pta:                %p\n", pta);
+    printf("Desreferência de pta(*pta):     %f\n", *pta);
+    printf("Endereço de pta(&pta):          %p\n\n", &pta);
+
+    printf("Ponteiro de ponteiros\n");      //Indereção múltipla
+    printf("Conteúdo de pf                  %p\n", pf);
+    printf("Desreferência 1 de pf(*pf):     %p\n", *pf);
+    printf("Desreferência 2 de pf(**pf):    %.1f\n", **pf);
+    printf("Endereço de pf:                 %p\n", &pf);
+    *pf = &a;
+    printf("%p\n", *pf);
+    printf("%f\n",**pf);
+    pf = &a;    //Resulta em erro de segmento no .exe
+    printf("%f\n", *pf);
+    printf("%f\n",**pf);
+    printf("%p\n", pf);
+
+    return 0;
+}

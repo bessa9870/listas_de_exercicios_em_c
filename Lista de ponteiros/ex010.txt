@@ -1,0 +1,9 @@
+Questão 10. Qual será a saída desse programa?
+int main(){
+    int i=5, *p= &i;
+    printf ("%u %d %d %d %d \n",p, *p+2, **&p, 3**p, **&p+4);
+    return 0;
+}
+
+R= Serão respectivamente: 
+Endereço de i, 7, 5, 15, 9;

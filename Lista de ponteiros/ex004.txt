@@ -1,0 +1,18 @@
+Questão 4. Na expressão float *pont; o que é do tipo float? 
+a) a variável pont.      
+b) o endereço de pont. 
+c) a variável apontada por pont. 
+d) nenhuma das anteriores.
+
+R= c)a variável apontada por pont.
+
+float *pont; receberá um endereço de uma variável do tipo
+float, ela não é um ponteiro do tipo float. Todos os ponteiros
+ocupam o mesmo espaço na memória porque apenas guardam um 
+endereço hexadecimal, o float na declaração é usado para que 
+o compilador possa interpretar os bytes no caso de uma aritmetica
+de ponteiros e para ler o conteúdo ser é int ou float por exemplo.
+Não tem como ser o endereço de pont, porque além de point não ser 
+do tipo float, o endereço também não é float pois é hexadecimal.
+Logo: float *point, apontará para um endereço de uma variável
+ do tipo float.

@@ -1,0 +1,13 @@
+Questão 7: Qual é a instrução que deve ser adicionada ao programa 
+seguinte para que ele trabalhe corretamente?
+main () {
+    int j, *pj;
+    *pj = 3; // 
+}
+
+R=
+main () {
+    int j, *pj;
+    pj = &j;  //Essa é a instrução que falta.
+    *pj = 3; // 
+}

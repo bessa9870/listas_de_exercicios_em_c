@@ -1,0 +1,20 @@
+Questão 11: Se i e j são variáveis inteiras e p e q 
+são ponteiros para inteiros, quais das seguintes 
+expressões de atribuição são ilegais? 
+a) p = &i; 
+b) *q = &j; 
+c) p = &*&i; 
+d) i = (*q)j;
+e) i = *&*&j; 
+f) q = &p; 
+g) i = (*p)++ + *q;
+
+R= b} *q = &j;
+Atribui um endereço ao desreferenciador.
+d) i = (*q)j;
+Não tem um operador entre j e os parenteses e 
+não é uma cconversão de tipo.
+f) q = &p;
+q é um ponteiro comum, não tem permissão para
+receber o endereço de outro endereço.
+

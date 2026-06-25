@@ -1,0 +1,10 @@
+Questão 2. Quais das seguintes instruções são corretas para declarar um ponteiro? 
+a) int_ptr x;       
+b) int *ptr; 
+c) *int ptr;        
+d) *x;
+
+R= Letra b) int *ptr. 
+
+O tipo de um ponteiro define que ele guardará endereços
+apenas do mesmo tipo.

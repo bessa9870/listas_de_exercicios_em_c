@@ -1,0 +1,5 @@
+Questão 1: O que é um ponteiro?
+
+R= Um ponteiro é um variável que guarda exclusivamente um endereço 
+de memória (&), ela guarda esse endereço no formato hexadecimal -
+com letras e números -.

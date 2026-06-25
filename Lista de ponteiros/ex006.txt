@@ -1,0 +1,7 @@
+Questão 6: Assumindo que queremos ler o valor de x, e o 
+endereço de x foi atribuído a px, a instrução seguinte é correta?
+scanf("%d", *px);
+
+R= Não, como o endereço de (& )x já foi entregue ao ponteiro, basta
+notar apenas o nome do ponteiro que já atua como o & de x:
+scanf("%d",px);

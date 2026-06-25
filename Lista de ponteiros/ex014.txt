@@ -1,0 +1,30 @@
+Questão 14: Dadas as declarações:
+int i, *pi, **ppi;
+float f, *pf, **ppf;
+
+Quais atribuições são permitidas?
+a) i = f; xx
+b) pf = &i; xx
+c) *pf = 5.9; //
+d) *ppi = &pi; xx
+e) *pf = 10; //
+f) f = i; xx
+g) pi = &f; xx
+h) *pi = 7.3; xx
+i) ppf = &pf; //
+j) **ppi = 100; //
+
+R= a) i = f;
+válida, compilador faz uma conversão automática
+transformando um número inteiro em decimal,
+ex: 5 -> 5.0. 
+c) *pf = 5.9;
+válida, atribui valor float a desreferenciação de pf.
+e) *pf = 5.9
+válida, atribui valor válido ao desreferenciador de pf.
+f) f = i;
+válida, converte automaticamente, ex: 7.1 -> 7.
+i) ppf = &pf;
+válida, ppf recebe endereço de ponteiro pra float.
+j) **ppi = 100;
+válida, altera o desreferenciador final.

@@ -1,0 +1,28 @@
+Questão 9: Qual o valor das seguintes expressões:
+int i = 3, j = 5;
+int *p = &i, *q = &j;
+
+a) p == &i 
+R= compara p com endereço de i. São idênticos.
+b) *p - *q
+R= desferência de p - q = 3 - 5, que é igual a -2.
+c) **&p
+
+R= &p é o endereço de p;
+*&p aponta para o conteúdo de p já que & e * se anulas é a mesma coisa que acessar p;
+**&p aponta para *p, & e * vão se anular, deixando apenas *p;Ctrl + Shift + V
+
+obs1: Para fixação:
+    printf("1.Conteúdo de valor2:     %d\n",valor2);    //Imprime conteúdo de valor2;
+    printf("2.Endereço de valor2:     %p\n", &valor2);  //Imprime o endereço da variável;
+    printf("3.Conteúdo de valor1:     %p\n",valor1);    //Imprime a referência de valor2
+    printf("4.Conteúdo de *valor1:    %d\n",*valor1);   //Imprime a desreferência de valor2;
+    printf("5.Endereço de &valor1:    %p\n",&valor1);   //Imprime o endereço do próprio ponteiro;
+    printf("6.Conteúdo em *&valor1:   %p\n",*&valor1);  //* e & anulam = valor1;
+    printf("7.Conteúdo em **&valor1:  %d\n",**&valor1); //* e & se anulam = *valor1;
+    //(&valor2 == valor1 == *&valor1) == endereço de valor2;
+
+obs2: para estudar:
+    Ponteiros para Ponteiros em C (ou Pointers to Pointers in C);
+    Alocação Dinâmica de Matrizes usando ponteiros duplos (é o uso mais prático para isso no dia a dia);
+    Múltiplos níveis de indireção em C (Multi-level indirection in C;

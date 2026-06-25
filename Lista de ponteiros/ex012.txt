@@ -1,0 +1,14 @@
+Questão 12. Seja a seguinte sequência de instruções em
+um programa em C:
+    int *pti;
+    int i = 10;
+    pti = &i;
+
+Qual dessas alternativas é falsa?
+a) pti armazena o endereço de i.
+b) *pti = 10.
+c) ao executar +pti = 20, i passará a ter valor 20.
+d) ao se alterar i, *pti será alterada.
+e) pti = 10.
+
+R= e) pti = 10; pti recebe endereço, não valor inteiro.

@@ -1,0 +1,22 @@
+Questão 3: Qual é a maneira correta de referenciar ch, assumindo 
+que o endereço de ch foi atribuído ao ponteiro indica?   
+a) *indica;         
+b) int *indica;     
+c) *indic;          
+d) ch 
+e) *ch:
+
+R= Letra a) *indica; 
+
+O desreferenciador (*) aponta para o conteúdo dentro do endereço
+de memória apontado. 
+
+obs: referenciação é quando você recebe o endereço (&), d
+esreferenciação é quando você acessa o conteúdo daquele endereço.
+
+REFERENCIAR:
+int *indica = &ch;
+
+DESREFERENCIAR:
+*indica = 20; 
+//ou printf("%d",*indica);
