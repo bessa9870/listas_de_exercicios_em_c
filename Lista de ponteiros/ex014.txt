@@ -3,12 +3,12 @@ int i, *pi, **ppi;
 float f, *pf, **ppf;
 
 Quais atribuições são permitidas?
-a) i = f; xx
+a) i = f; //
 b) pf = &i; xx
 c) *pf = 5.9; //
 d) *ppi = &pi; xx
 e) *pf = 10; //
-f) f = i; xx
+f) f = i; //
 g) pi = &f; xx
 h) *pi = 7.3; xx
 i) ppf = &pf; //
