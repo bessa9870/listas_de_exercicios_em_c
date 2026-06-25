@@ -20,7 +20,7 @@ transformando um número inteiro em decimal,
 ex: 5 -> 5.0. 
 c) *pf = 5.9;
 válida, atribui valor float a desreferenciação de pf.
-e) *pf = 5.9
+e) *pf = 10;
 válida, atribui valor válido ao desreferenciador de pf.
 f) f = i;
 válida, converte automaticamente, ex: 7.1 -> 7.
