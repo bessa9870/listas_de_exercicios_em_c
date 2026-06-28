@@ -10,10 +10,10 @@ c) ptx = &a; xx
 d) *pf = &a; //
 e) pp = &pta; xx
 f) **pf = 7.9; //
-g) *ptx = 20;
-h) ptx = &x;
-i) pp = &x;
-j) pf = &pta;
+g) *ptx = 20; //
+h) ptx = &x; //
+i) pp = &x; xx
+j) pf = &pta; //
 
 R= a) x = 100;
 atribuição correta de int para int.
