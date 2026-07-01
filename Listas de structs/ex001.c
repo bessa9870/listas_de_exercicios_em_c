@@ -1,7 +1,7 @@
 #include <locale.h>
 #define LEN 100
 
-/* Questão 1. Construa uma declaração de struct em C
+/*1. Construa uma declaração de struct em C
 que possa acomodar dados provenientes de
 uma tabela conforme o exemplo a seguir: */
 

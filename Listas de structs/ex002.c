@@ -7,8 +7,9 @@
 #define FONE 20
 #define tamanho 5
 
-/* Utilizando estrutura, fazer um programa em C que permita a entrada de nome,
+/*2. Utilizando estrutura, fazer um programa em C que permita a entrada de nome,
 endereço e telefone de 5 pessoas e os imprima em ordem alfabética. */
+
 struct local{
     char rua[LEN];
     int numero;
