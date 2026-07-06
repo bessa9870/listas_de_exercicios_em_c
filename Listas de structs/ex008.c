@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*7. Escreva um trecho de código em “C” para fazer a criação dos novos tipos de dados
+/*8. Escreva um trecho de código em “C” para fazer a criação dos novos tipos de dados
 conforme solicitado abaixo:
 Horário: composto de hora, minutos e segundos.
 Data : composto de dia, mês e ano.
