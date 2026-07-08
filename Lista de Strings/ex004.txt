@@ -1,0 +1,6 @@
+4. Qual a diferença entre "MN\0P" e "MN0P"?
+
+Não há diferença em bytes entre as duas, mas "MN\OP" quando inicializada em linha
+de código já está completa e salva na memória, mas, na hora de imprimir o printf
+e o puts vão mostrar até chegar no terminador e parar, se eu quiser imprimir
+essa string completa, seria por um laço for.

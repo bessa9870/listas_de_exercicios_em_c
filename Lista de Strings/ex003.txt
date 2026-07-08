@@ -1,0 +1,9 @@
+3. Qual a diferença entre "mno" e "m\no"? Qual a diferença entre "MNOP" e "MN0P"?
+
+Não há diferença em bytes entre "mno" e "m\no", o computador vai ler o \n como o
+caractere especial de quebra de linha e vai imprimir exatamente da mesma forma
+que recebeu os dados do usuário, se eu inicializar em linha código usando um \n
+o programa vai sim quebrar o texto.
+Entre 'MNOP' e "MN0P" não há diferença em bytes mesmo contando com o \0 no fim.
+Como nesse caso não há nenhum caracterce oculto, a string será impressa da mesma
+forma que está escrita

@@ -1,0 +1,6 @@
+2. Qual a diferença entre "A" e 'A'?
+
+'A' é um char simples, ocupa 1 byte na memória.
+
+"A" é uma string, por isso tem um terminador
+nulo "\0", ocupando 2 bytes na memória.
