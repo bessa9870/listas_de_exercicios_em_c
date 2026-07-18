@@ -42,8 +42,12 @@ void repeticao(char *s){
                     if(s[i] == s[j])
                         contador++;
                 }
-            if(contador > 0)
-                printf("A letra %c se repete %d vezes.\n",s[i],contador);
+            if(contador > 0){
+                if(contador == 1)
+                    printf("A letra %c tem %d repetição.\n",s[i],contador);
+                else
+                    printf("A letra %c tem %d repetições.\n",s[i],contador);
             }
         }
     }
+}
